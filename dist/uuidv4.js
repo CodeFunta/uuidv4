@@ -7,7 +7,7 @@ var uuidv4 = function uuidv4() {
   return uuid();
 };
 
-uuidv4.regex = /^[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[89aAbB][a-f0-9]{3}-[a-f0-9]{12}$/;
+uuidv4.regex = /^[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[89aAbB][a-f0-9]{3}-[a-f0-9]{12}$/i;
 
 uuidv4.is = function (value) {
   if (!value) {
